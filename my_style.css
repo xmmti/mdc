@@ -1,4 +1,4 @@
-@import url("/normalize.min.css");
+@import url("normalize.min.css");
 :root {
     --web-share:  inline-block;
     --mdc-theme-primary: #fcb8ab;
@@ -13,6 +13,9 @@
 .mdc-snackbar__action:not(:disabled),
 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
     color: var(--mdc-theme-primary) !important;
+}
+.mdc-card__primary-action::before, .mdc-card__primary-action::after {
+  background-color: transparent;
 }
 .container {
     min-height: 100vh;
