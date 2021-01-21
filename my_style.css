@@ -1,0 +1,90 @@
+@import url("/normalize.min.css");
+:root {
+    --web-share:  inline-block;
+    --mdc-theme-primary: #fcb8ab;
+    --mdc-theme-secondary: #feeae6;
+    --mdc-theme-on-primary: #fff;
+    --mdc-theme-on-secondary: #fff
+  }
+
+.mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label,
+.mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic,
+.mdc-drawer .mdc-list-item--activated,
+.mdc-snackbar__action:not(:disabled),
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: var(--mdc-theme-primary) !important;
+}
+.container {
+    min-height: 100vh;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+.cn {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card-icon {
+    user-select: none;
+}
+.mdc-card {
+    max-height: 390px;
+    max-width: 350px;
+  }
+  
+  .card-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .card-title {
+    margin-right: 1rem;
+  }
+  .card-header h2,
+  .card-header h3 {
+    margin: 0;
+  }  
+  .mdc-card__media {
+    background-color: var(--mdc-theme-primary)
+  }
+  .my-card{
+      margin: 0.5rem;
+  }
+  .card-body {
+    padding: 16px;
+    padding-bottom: unset;
+  }
+  img.card-img {
+    max-width: 100%;
+ }
+ button[title="Share"]{
+     display: var(--web-share);
+ }

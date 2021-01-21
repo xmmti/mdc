@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="my_style.css">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script>if (typeof window.navigator.share == "undefined") document.documentElement.style.setProperty('--web-share', 'none');</script>
+    <title>Test</title>
+</head>
+<body>
+    <div class="container" dir="rtl">
+        <div class="cn">
+            
+            <div class="my-card"><div class="mdc-card">
+                <div class="mdc-card__primary-action" tabindex="0">
+                  <div class="card-header">
+                    <div class="card-icon material-icons">android</div>
+                    <div class="card-title">
+                      <h2 class="mdc-typography--headline6">Title</h2>
+                      <h3 class="mdc-typography--subtitle2">Secondary text</h3>
+                    </div>
+                  </div>
+                    <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Aspect_ratio_-_16x9.svg/1200px-Aspect_ratio_-_16x9.svg.png">
+                </div>
+                <div class="card-body mdc-typography--body2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="mdc-card__actions">
+                  <div class="mdc-card__action-icons">
+                    <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share" data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>share</button>
+                    <div id="demo-menu" class="mdc-menu-surface--anchor">
+                    <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options" data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>more_vert</button>
+                    <div class="mdc-menu mdc-menu-surface">
+                        <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                          <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">A Menu Item</span>
+                          </li>
+                          <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__ripple"></span>
+                            <span class="mdc-list-item__text">Another Menu Item</span>
+                          </li>
+                        </ul>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+</div>
+            </div>
+                <div class="my-card"><div class="mdc-card">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                      <div class="card-header">
+                        <div class="card-icon material-icons">android</div>
+                        <div class="card-title">
+                          <h2 class="mdc-typography--headline6">Title</h2>
+                          <h3 class="mdc-typography--subtitle2">Secondary text</h3>
+                        </div>
+                      </div>
+                        <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Aspect_ratio_-_16x9.svg/1200px-Aspect_ratio_-_16x9.svg.png">
+                    </div>
+                    <div class="card-body mdc-typography--body2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="mdc-card__actions">
+                      <div class="mdc-card__action-icons">
+                        <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share" data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>share</button>
+                        <div id="demo-menu" class="mdc-menu-surface--anchor">
+                        <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options" data-mdc-auto-init="MDCRipple" data-mdc-ripple-is-unbounded>more_vert</button>
+                        <div class="mdc-menu mdc-menu-surface">
+                            <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                              <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+                                <span class="mdc-list-item__ripple"></span>
+                                <span class="mdc-list-item__text">A Menu Item</span>
+                              </li>
+                              <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+                                <span class="mdc-list-item__ripple"></span>
+                                <span class="mdc-list-item__text">Another Menu Item</span>
+                              </li>
+                            </ul>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+    </div>
+                </div>
+    </div>
+   
+      
+      <!-- at the bottom of the page -->
+      <script type="text/javascript">
+        mdc.autoInit();
+        const menu = []
+        document.querySelectorAll('.mdc-menu').forEach((e) => {menu.push(mdc.menu.MDCMenu.attachTo(e));})
+        document.querySelectorAll("[title*='More options']").forEach((e, i)=>{e.addEventListener('click', () => {
+        menu[i].open = !menu[i].open;
+        })});
+      </script>
+</body>
+</html>
