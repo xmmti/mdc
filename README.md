@@ -1,5 +1,5 @@
 # mdc
 
-See in the [GitHub Pages](https://pages.github.com/).
+See in the [GitHub Pages](https://xmmti.github.io/mdc/).
 
 
